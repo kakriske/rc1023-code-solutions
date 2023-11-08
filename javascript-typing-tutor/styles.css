@@ -1,0 +1,21 @@
+/* html {
+  font-size: 20px;
+} */
+
+body {
+  margin: 0;
+  font-family: monospace;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
