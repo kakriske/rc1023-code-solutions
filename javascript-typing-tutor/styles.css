@@ -1,15 +1,10 @@
-/* html {
+html {
   font-size: 20px;
-} */
+}
 
 body {
   margin: 0;
   font-family: monospace;
-}
-
-h1 {
-  font-size: 2em;
-  font-weight: bold;
 }
 
 .container {
@@ -17,5 +12,20 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
+}
+
+h1 span {
+  white-space: pre;
+}
+
+.current {
+  border-bottom: 3px solid;
+}
+
+.current.incorrect {
+  color: red;
+}
+
+.correct {
+  color: green;
 }
