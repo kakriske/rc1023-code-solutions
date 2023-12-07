@@ -15,4 +15,22 @@ function getArea(width, height) {
 }
 var getAreaResult = getArea(5, 10);
 console.log('getAreaResult:', getAreaResult);
-// console.log(getArea(10,5));
+function getFirstName(person) {
+  return person.firstName;
+}
+var nameMan = {
+  firstName: 'Lelouche',
+  lastName: 'Lamperouge',
+};
+var getFirstNameResult = getFirstName(nameMan);
+console.log(getFirstNameResult);
+// function getLastElement(array: number[]): number {
+//   if (array.length > 0) {
+//     return array[array.length - 1];
+//   } else {
+//     return undefined;
+//   }
+// }
+// const numbersArray: number[] = [0, 1, 2, 3, 4];
+// const lastNumber: number = getLastElement(numbersArray);
+// console.log(lastNumber);
