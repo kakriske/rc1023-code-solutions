@@ -1,20 +1,20 @@
+import { useState } from "react";
+
 interface RotatingBannerProps {
   items: string[];
 }
 
-interface Props {
-  word: string;
-}
 
 export function RotatingBanner({ items }: RotatingBannerProps) {
-  console.log(items);
+  const [currentIndex, setCurrentIndex] = useState(4);
+
   return (
     <>
-      <Banner word={items[0]} />
+      <Banner word={items[currentIndex]} />
       <div>
         <Prev />
       </div>
-      <Indicators items={items} />
+      <Indicators currentIndex= {currentIndex} items={items} />
       <div>
         <Next />
       </div>
@@ -34,12 +34,17 @@ function Next() {
   return <button>Next</button>;
 }
 
-function Indicators({ items }: RotatingBannerProps) {
+interface IndicatorsProps {
+  items: Props['items'];
+  currentIndex: number;
+}
+
+function Indicators({ items, currentIndex }: IndicatorsProps) {
   console.log('items', items);
   return (
     <>
       {items.map((item, index) => (
-        <button>{index}</button>
+        <button style={{backgroundColor: currentIndex === index ? 'lightblue' : ''}}>{index}</button>
       ))}
     </>
   );
