@@ -1,0 +1,49 @@
+.validated-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+input {
+  color: black;
+  border: 3px ridge black;
+}
+
+input:focus {
+  border-color: black;
+  outline: black;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-container input {
+  margin-top: 15px;
+}
+
+.error-icon {
+  margin-left: 5px;
+}
+
+.success-icon {
+  margin-left: 5px;
+}
+
+.error-message {
+  margin-right: 10px;
+  color: red;
+}
+
+label {
+  font-size: larger;
+  font-weight: 400;
+  color: black;
+}
+
+* {
+  background-color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+}
